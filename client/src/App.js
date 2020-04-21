@@ -5,10 +5,6 @@ import SystemIndex from './components/SystemIndex/SystemIndex';
 
 
 class App extends React.Component {
-  constructor() {
-    super()
-  }
-
   render() {
     return (
       <div className="App">
