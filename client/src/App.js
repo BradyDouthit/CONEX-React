@@ -1,25 +1,21 @@
 import React from 'react';
+import { Route } from 'react-router-dom';
 import axios from 'axios';
+import SystemIndex from './components/SystemIndex/SystemIndex';
+
 
 class App extends React.Component {
   constructor() {
     super()
   }
 
-  get = () => {
-    axios.get('/api').then(data => {
-      console.log(data)
-      return (
-        <div>DATA</div>
-      )
-    })
-  }
-  
   render() {
     return (
       <div className="App">
-        Test
-        {this.get()}
+        <Route 
+          exact path="/"
+          render={() => <SystemIndex title="System Index" />}
+        />
       </div>
     );
   }
