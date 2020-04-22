@@ -1,7 +1,7 @@
 const MongoClient = require('mongodb').MongoClient;
 const assert = require('assert');
 var asyncStuff = require('async');
-var config = require('../bin/config');
+var config = require('../config');
 
 function getData(courseID, collection_name, callback) {
     console.log("getData() courseID: " + courseID)

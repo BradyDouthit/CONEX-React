@@ -1,6 +1,6 @@
 var express = require("express");
 var router = express.Router();
-var config = require("../bin/config");
+var config = require("../config");
 var queries = require("../models/queries");
 
 router.use("/", (req, res, next) => {

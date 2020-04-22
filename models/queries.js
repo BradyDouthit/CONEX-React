@@ -1,4 +1,4 @@
-var config = require('../bin/config');
+var config = require('../config');
 var request = require('request');
 var asyncStuff = require('async');
 var canvas = require('./canvas');

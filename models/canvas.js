@@ -1,5 +1,5 @@
-var config = require('../bin/config');
-var auth = require('../bin/auth');
+var config = require('../config');
+var auth = require('../auth');
 var request = require('request');
 var asyncStuff = require('async');
 var mongo = require('./mongo');
@@ -1304,6 +1304,7 @@ function getGradebook(courseID, courseName, callback) {
 }
 
 var awardLuckies = function(req, res, next) {
+    console.log("LUCKIES")
     var d = new Date();
     var studentID = parseInt(req.session.user_id);
     req.session.lucky = false;
