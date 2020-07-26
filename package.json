@@ -1,37 +1,26 @@
 {
-  "name": "server",
+  "name": "CONEX-React",
   "version": "1.0.0",
   "description": "",
-  "main": "server.js",
+  "main": "index.js",
   "scripts": {
-    "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
-    "start:prod": "node server.js",
-    "start:dev": "concurrently \"cd client && npm start\" \"nodemon server.js\"",
-    "client": "cd client && npm run start",
-    "install": "cd client && npm install",
-    "build": "cd client && npm run build"
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BradyDouthit/CONEX-React.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BradyDouthit/CONEX-React/issues"
+  },
+  "homepage": "https://github.com/BradyDouthit/CONEX-React#readme",
   "dependencies": {
-    "async": "^3.2.0",
-    "better-queue": "^3.8.10",
-    "body-parser": "^1.19.0",
-    "client-sessions": "^0.8.0",
-    "concurrently": "^5.1.0",
-    "cookie-parser": "^1.4.5",
-    "cors": "^2.8.5",
-    "dotenv": "^8.2.0",
+    "concurrently": "^5.2.0",
     "express": "^4.17.1",
     "if-env": "^1.0.4",
-    "ims-lti": "^3.0.2",
-    "mongoose": "^5.9.10",
-    "redis": "^3.0.2",
-    "request": "^2.88.2",
-    "simple-oauth2": "^3.4.0"
-  },
-  "devDependencies": {
-    "nodemon": "^2.0.3"
+    "mongoose": "^5.9.25"
   }
 }
