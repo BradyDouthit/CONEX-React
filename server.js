@@ -6,6 +6,9 @@ const bodyParser = require('body-parser');
 // get models
 // let mongo = require("./models/mongo");
 
+//load environment variables
+require('dotenv').config();
+
 // get routes
 let api = require('./routes/api')
 
