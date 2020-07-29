@@ -33,8 +33,16 @@ app.use(express.json());
 // Make public a static folder
 app.use(express.static("public"));
 
+
 // Connect to the Mongo DB
-mongoose.connect(MONGODB_URI, { useNewUrlParser: true, useUnifiedTopology: true });
+mongoose.connect(MONGODB_URI, { useNewUrlParser: true, useUnifiedTopology: true })
+.then(response => {
+    console.log("db connection established")
+})
+.catch(err => {
+    console.log("db connection error")
+    console.log(err)
+});
 
 // Start the server
 app.listen(PORT, function () {
